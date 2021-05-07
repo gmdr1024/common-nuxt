@@ -7,13 +7,13 @@
     class="elevation-1"
   >
     <template #[`item.created_at`]="{ item }">
-      {{ $dateFns(item.created_at) }}
+      {{ $dateFormat(item.created_at) }}
     </template>
     <template #[`item.updated_at`]="{ item }">
-      {{ $dateFns(item.updated_at) }}
+      {{ $dateFormat(item.updated_at) }}
     </template>
     <template #[`item.deleted_at`]="{ item }">
-      {{ $dateFns(item.deleted_at) }}
+      {{ $dateFormat(item.deleted_at) }}
     </template>
   </v-data-table>
 </template>
